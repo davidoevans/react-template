@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM  from 'react-dom';
-
 import Routes from './Routes.jsx';
+import NavBar from './components/nav/NavBar';
+import Calculator from './components/parts/Calculator';
+import List from './components/parts/List';
 
-ReactDOM.render(<Routes /> , document.getElementById('main'));
+let toRoute = false;
 
-// ReactDOM.render(<NavBar  bgColor="#FFF" titleColor="3097d1" navData={navLinks}/>, document.getElementById('nav'));
-// ReactDOM.render(<Calculator />, document.getElementById('calculator'));
-// ReactDOM.render(<List />, document.getElementById('list'));
+if (toRoute) {
+  ReactDOM.render(<Routes /> , document.getElementById('main'));
+} else {
+  let navLinks = [{title: "Home", href: "/"},{title:"Identity", href: "#"}];
+  ReactDOM.render(<NavBar  bgColor="#FFF" titleColor="3097d1" navData={navLinks}/>, document.getElementById('main'));
+  ReactDOM.render(<Calculator />, document.getElementById('calculator'));
+  ReactDOM.render(<List />, document.getElementById('list'));
+}
