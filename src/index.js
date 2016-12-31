@@ -6,7 +6,7 @@ import Calculator from './components/calculator/Calculator.jsx';
 import List from './components/reflux-driven-list/List.jsx';
 import LeadCapture from './components/register/LeadCapture.jsx';
 
-let toRoute = false;
+let toRoute = true;
 
 if (toRoute) {
   ReactDOM.render(<Routes /> , document.getElementById('main'));
