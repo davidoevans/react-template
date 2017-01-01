@@ -39,7 +39,7 @@ var NavBar = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <Link style={titleStyle} className="navbar-brand" to="#">Product Shop</Link>
+              <Link style={titleStyle} className="navbar-brand" to="/">React Template</Link>
             </div>
             <div className="collapse navbar-collapse" id="nav-collapse">
               <ul className="nav navbar-nav">{this.props.navData.map(createLinkItem)} </ul>

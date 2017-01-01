@@ -9,7 +9,7 @@ var HomePage = React.createClass({
         <h1>Home</h1>
         <ul>
           <li><Link to="/product/55">iOS Course</Link></li>
-          <li><Link to="product/67">React Course</Link></li>
+          <li><Link to="/product/67">React Course</Link></li>
         </ul>
       </div>
     );
